@@ -321,17 +321,25 @@
         }
         .company-name-container {
             padding-left: 78px;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             font-weight: 700;
-            font-size: 28px;
-            min-height: 28px;
-            line-height: 30px;
+            font-size: 24px;
+            min-height: 24px;
+            line-height: 26px;
+        }
+        .company-name-container.right-side {
+            padding-left: 36px;
+            padding-right: 50px;
         }
         .project> div {
             position: relative;
             min-height: 84px;
             padding-left: 28px;
             margin-bottom: 22px;
+            padding-right: 36px;
+        }
+        .project.right-side> div {
+            padding-left: 0;
         }
         .project .left-side-box {
             height: 74px;
@@ -345,6 +353,10 @@
         }
         .project-content {
             padding-left: 50px;
+        }
+        .project-content.right-side {
+            padding-left: 36px;
+            padding-right: 50px;
         }
         .project-desc {
             font-size: 24px;
@@ -361,9 +373,13 @@
             font-style: italic;
             margin-bottom: 8px;
         }
-        .skills-header, .skills-inner {
+        .project-time> span:nth-of-type(2) {
+            float: right
+        }
+        .skills-header, .skills-inner, .section-title.right-side  {
             padding-left: 36px;
             padding-right: 50px;
+            clear: left;
         }
         .skill {
             float: left;
@@ -384,7 +400,7 @@
             font-size: 28px;
             min-height: 28px;
             line-height: 30px;
-            font-weight: 700px;
+            font-weight: 700;
             font-family: "Ubuntu";
             margin-bottom: 14px;
         }
@@ -408,6 +424,18 @@
             position: absolute;
             left: 0;
             top: 6px;
+        }
+        .section-title {
+            padding-left: 78px;
+            margin-bottom: 8px;
+            font-weight: 700;
+            font-size: 28px;
+            min-height: 28px;
+            line-height: 30px;
+        }
+        .unstyled-link {
+            text-decoration: none;
+            color: inherit;
         }
     </style>
 </head>
@@ -442,7 +470,7 @@
                         </div>
                         <div class="contact-details">
                             <div>
-                                <a class="contact-container" href="mailto:tusharkumar9009@gmail.com">
+                                <a class="contact-container" href="mailto:tusharkumar9009@gmail.com" target="_blank">
                                     <div class="icon-container">
                                         <img src="close-envelope.png" class="contact-icon"/>
                                     </div>
@@ -458,11 +486,11 @@
                                 </a>
                             </div>
                             <div>
-                                <a class="contact-container" href="https://www.linkedin.com/in/tushar-kumar-108709123">
+                                <a class="contact-container" href="https://www.linkedin.com/in/tushar-kumar-108709123" target="_blank">
                                     <div class="icon-container">
                                         <img src="linkedin-logo.png" class="contact-icon"/>
                                     </div>
-                                    tushar-kumar-108709123
+                                    linkedin.com/in/tushar-kumar-108709123
                                 </a>
                             </div>
                             <div>
@@ -474,11 +502,11 @@
                                 </a>
                             </div>
                             <div>
-                                <a class="contact-container" href="https://github.com/tk1994">
+                                <a class="contact-container" href="https://github.com/tk1994" target="_blank">
                                     <div class="icon-container">
                                         <img src="github-logo.png" class="contact-icon"/>
                                     </div>
-                                    tk1994
+                                    github.com/tk1994
                                 </a>
                             </div>
                         </div>
@@ -490,6 +518,7 @@
                 <div class="work-xp">
                     <div class="company-name-container">
                         <div>Company 1</div>
+                        <div class="project-time">ancsd</div>
                     </div>
                     <div class="projects-container">
                         <div class="project">
@@ -562,6 +591,29 @@
                     </div>
                 </div>
                 <div class="section-title">Education</div>
+                <div class="work-xp">
+                    <div class="company-name-container">
+                        <div>Bachelor of Engineering<br/>Computer Science and Engineering</div>
+                    </div>
+                    <div class="projects-container">
+                        <div class="project">
+                            <div>
+                                <div class="left-side-box"></div>
+                                <div class="project-content">
+                                    <div class="project-desc">Birla Institute of Technology, Mesra&nbsp;<a class="unstyled-link" href="https://www.bitmesra.ac.in/" target="_blank"><img src="external-link-symbol.png" class="contact-icon"/></a></div>
+                                    <div class="project-time">
+                                        <span>
+                                            08/2013 - 06/2017
+                                        </span>
+                                        <span>
+                                            First Class with Distinction
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="body-right">
                 <div class="skills-container">
@@ -595,6 +647,29 @@
                         </div>
                         <div class="skill">
                             <div>skillskillskillskill</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-title right-side">Personal Projects</div>
+                <div class="work-xp">
+                    <div class="projects-container">
+                        <div class="project right-side">
+                            <div>
+                                <div class="project-content right-side">
+                                    <div class="project-desc">Desc</div>
+                                    <div class="project-time">
+                                        <span>
+                                            08/2013 - 06/2017
+                                        </span>
+                                    </div>
+                                    <div class="details-container">
+                                        <div class="point">
+                                            <div class="bullet-icon"></div>
+                                            <div class="point-content">abcd</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
