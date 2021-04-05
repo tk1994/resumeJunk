@@ -204,7 +204,7 @@
           width: 100%;
         }
         .top-container {
-            padding-top: 44px;
+            padding-top: 30px;
             position: relative;
             width: 100%;
             height: auto;
@@ -287,7 +287,7 @@
         .contact-details> div {
             position: relative;
             clear: both;
-            margin-top: 10px;
+            margin-top: 5px;
             overflow: auto;
         }
         .contact-details> div:nth-of-type(1) {
@@ -323,6 +323,7 @@
         .company-name-container {
             padding-left: 40px;
             margin-bottom: 8px;
+            margin-top: 8px;
             font-weight: 600;
             font-size: 22px;
             min-height: 22px;
@@ -345,17 +346,17 @@
         }
         .project> div {
             position: relative;
-            min-height: 84px;
-            padding-left: 28px;
-            margin-bottom: 12px;
-            padding-right: 36px;
+            min-height: 60px;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            padding-right: 10px;
         }
         .project.right-side> div {
             padding-left: 0;
         }
         .project .left-side-box {
-            height: 74px;
-            top:2px;
+            height: 5px;
+            top:5px;
             position: absolute;
             width: 28px;
             left: 0;
@@ -404,7 +405,7 @@
         .skill {
             float: left;
             width: auto;
-            margin: 0 10px 18px 0px;
+            margin: 0 2px 6px 0px;
             font-size: 18px;
             min-height: 18px;
             line-height: 22px;
@@ -567,44 +568,94 @@
                     </div>
                 </div>
             </div>
-            <div class="body-left">
-                <div class="section-title">Work Experience</div>
-                <div class="work-xp">
-                    <div class="company-name-container">
-                        <div>LendingKart Technologies Pvt. Ltd.</div>
-                        <div class="project-time"><u>02/2019 - Present</u></div>
-                        <div class="company-desc">A fin-tech company in the working capital space.</div>
+            <div style="clear: both;"></div>
+            <div style="border-bottom: 2px solid #4f90cd; padding-bottom: 10px; height: 830px;">
+                <div class="section-title" style="position: relative">
+                    Work Experience
+                    <div class="icon-container" style="position: absolute; top: 0; right: 50px;">
+                        <img src="../StaticAssets/text-direction-horizontal-ltr-svgrepo-com.png" class="contact-icon" style="height: 50px; width: 50px;"/>
                     </div>
-                    <div class="projects-container">
-                        <div class="project">
-                            <div>
-                                <div class="left-side-box"></div>
-                                <div class="project-content">
-                                    <div class="project-desc">Platform for Colender interaction</div>
-                                    <div class="project-time">04/2019 - Present</div>
-                                    <div class="details-container">
-                                        <div class="point">
-                                            <div class="bullet-icon"></div>
-                                            <div class="point-content">Created webhook endpoint in <b>Java</b> and used <b>Kafka</b> to handle requests given the async nature of data flow.</div>
+                </div>
+                <div class="" style="border-bottom: 1px dashed #4f90cd; height: 325px;">
+                    <div class="work-xp">
+                        <div class="company-name-container">
+                            <div>Amazon Development Centre (India) Private Limited</div>
+                            <div class="project-time">
+                                <u>Oct 2019 - Present</u>
+                                <span class="company-desc" style="margin-left: 10px;">Tech wing of Ecommerce giant.</span>
+                            </div>
+                        </div>
+                        <div class="projects-container">
+                            <div class="project body-left">
+                                <div>
+                                    <div class="left-side-box"></div>
+                                    <div class="project-content">
+                                        <div class="project-desc">Generalised costing module</div>
+                                        <div class="details-container">
+                                            <div class="point">
+                                                <div class="bullet-icon"></div>
+                                                <div class="point-content">Desinged low level change for costing module to enable cost calculation at various granuralities (cartons, containers) which earlier only calculated costs for containers.</div>
+                                            </div>
                                         </div>
-                                        <div class="point">
-                                            <div class="bullet-icon"></div>
-                                            <div class="point-content">Created data pipeline and templates to publish agreement doc pdf for end user consumption.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project body-right">
+                                <div>
+                                    <div class="left-side-box"></div>
+                                    <div class="project-content">
+                                        <div class="project-desc">Peak Scaling spoc for financial systems</div>
+                                        <div class="details-container">
+                                            <div class="point">
+                                                <div class="bullet-icon"></div>
+                                                <div class="point-content">As the spoc from my team for Amazon wide annual peak preparedness drive, collected and generated forecast requests volume from upstreams and downstreams to load test systems and match and scale serverless utilities quotas. Assessed financial risk with existing redrive mechanisms to be below the acceptable threshold.</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="project">
-                            <div>
-                                <div class="left-side-box"></div>
-                                <div class="project-content">
-                                    <div class="project-desc">Loan origination system and Loans document Management Platform</div>
-                                    <div class="project-time">02/2019 - 04/2019</div>
-                                    <div class="details-container">
-                                        <div class="point">
-                                            <div class="bullet-icon"></div>
-                                            <div class="point-content">Auth UI in <b>Angular</b> to access loan application system.</div>
+                        <div class="projects-container">
+                            <div class="project body-left">
+                                <div>
+                                    <div class="left-side-box"></div>
+                                    <div class="project-content">
+                                        <div class="project-desc">Reconciliation for Financial Systems</div>
+                                        <div class="details-container">
+                                            <div class="point">
+                                                <div class="bullet-icon"></div>
+                                                <div class="point-content">Provided hld and metrics justifications to use aws kinesis firehose to publish data to reconciliation system present in a separate region. Provided hld to use dependency injection to decide the region to publish data to at run time.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project body-right">
+                                <div>
+                                    <div class="left-side-box"></div>
+                                    <div class="project-content">
+                                        <div class="project-desc">Stack Setup Automation</div>
+                                        <div class="details-container">
+                                            <div class="point">
+                                                <div class="bullet-icon"></div>
+                                                <div class="point-content">Automated the stack setup process of a suite of financial systems based on legacy AWS infra using AWS cloudformation and pipelines automation tool with workaround for missing technologies in restrictive AWS regions.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-container">
+                            <div class="project body-left">
+                                <div>
+                                    <div class="left-side-box"></div>
+                                    <div class="project-content">
+                                        <div class="project-desc">CI/CD Pipelines</div>
+                                        <div class="details-container">
+                                            <div class="point">
+                                                <div class="bullet-icon"></div>
+                                                <div class="point-content">Reduced security and availability risks of team's CI/CD pipelines by enforcing code review, test coverage and replication of hosts and access keys in multiple regions.</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -612,219 +663,184 @@
                         </div>
                     </div>
                 </div>
-                <div class="work-xp">
-                    <div class="company-name-container">
-                        <div>Kuliza Technologies Pvt. Ltd.</div>
-                        <div class="project-time"><u>07/2017 - 02/2019</u></div>
-                        <div class="company-desc">Digital Transformation Partner for Financial Enterprises</div>
-                    </div>
-                    <div class="projects-container">
-                        <div class="project">
-                            <div>
-                                <div class="left-side-box"></div>
-                                <div class="project-content">
-                                    <div class="project-desc">Platform for General Insurer</div>
-                                    <div class="project-time">08/2018 - 02/2019</div>
-                                    <div class="details-container">
-                                        <div class="point">
-                                            <div class="bullet-icon"></div>
-                                            <div class="point-content">Created data pipeline in <b>Rust</b> for location access of phone stores.</div>
-                                        </div>
-                                        <div class="point">
-                                            <div class="bullet-icon"></div>
-                                            <div class="point-content">
-                                                Created UI in <b>Elm Lang</b> with a multitude of features for field agents and assessors to inspect vehicles 
-                                                highly optimal for mobile devices.
-                                            </div>
-                                        </div>
-                                        <div class="point">
-                                            <div class="bullet-icon"></div>
-                                            <div class="point-content">
-                                                Created DB schema (postgresql), data pipeline and mathematical logic in <b>Rust</b> to store 
-                                                image data as co-ordinates of original image to reduce load to 25% on network, server and handheld devices.
+                <div class="" style="clear: both;">
+                    <div class="work-xp" style="border-bottom: 1px dashed #4f90cd; height: 140px;">
+                        <div class="company-name-container">
+                            <div>LendingKart Technologies Pvt. Ltd.</div>
+                            <div class="project-time">
+                                <u>Feb 2019 - Oct 2019</u>
+                                <span class="company-desc" style="margin-left: 10px;">
+                                    A fin-tech company in the working capital space.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="projects-container">
+                            <div class="project body-left">
+                                <div>
+                                    <div class="left-side-box"></div>
+                                    <div class="project-content">
+                                        <div class="project-desc">Colender Interaction</div>
+                                        <div class="details-container">
+                                            <div class="point">
+                                                <div class="bullet-icon"></div>
+                                                <div class="point-content">Implemented Generic interface using webhooks for colender bank systems to send data to and processed asynchronously using a Kafka workflow.</div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="project body-right">
+                                <div>
+                                    <div class="left-side-box"></div>
+                                    <div class="project-content">
+                                        <div class="project-desc">Loan Management System</div>
+                                        <div class="details-container">
+                                            <div class="point">
+                                                <div class="bullet-icon"></div>
+                                                <div class="point-content">Workflow to collect loan data from various microservices using a facade interface for each facet of data and compile a markup document.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="project">
+                    </div>
+                    <div class="work-xp">
+                        <div class="company-name-container">
+                            <div>Kuliza Technologies Pvt. Ltd.</div>
+                            <div class="project-time">
+                                <u>Jul 2017 - Feb 2019</u>
+                                <span class="company-desc" style="margin-left: 10px;">
+                                    Digital Transformation Partner for Financial Enterprises.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="projects-container">
+                            <div class="project body-left">
+                                <div>
+                                    <div class="left-side-box"></div>
+                                    <div class="project-content">
+                                        <div class="project-desc">Platform for General Insurer</div>
+                                        <div class="details-container">
+                                            <div class="point">
+                                                <div class="bullet-icon"></div>
+                                                <div class="point-content">
+                                                    Parts of workflow engine to receive requests, process data, schedule and track inspection, payments and document generation for the process of consumer automotive insurance.
+                                                </div>
+                                            </div>
+                                            <div class="point">
+                                                <div class="bullet-icon"></div>
+                                                <div class="point-content">
+                                                    UI for field agents to perform various transformations and translating those transforms as mathematical coordinates instead of actual image to save nework and DB.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project body-right">
+                                <div>
+                                    <div class="left-side-box"></div>
+                                    <div class="project-content">
+                                        <div class="project-desc">SAAS EXTENSION FOR JIRA SOFTWAREE</div>
+                                        <div class="details-container">
+                                            <div class="point">
+                                                <div class="bullet-icon"></div>
+                                                <div class="point-content">Extension for Atlassian JIRA which provide quality test management to any JIRA project.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-container" style="clear: both;">
+                        <div class="project body-left">
                             <div>
                                 <div class="left-side-box"></div>
                                 <div class="project-content">
-                                    <div class="project-desc">Workflow management tool for Software Development</div>
-                                    <div class="project-time">12/2017 - 07/2018</div>
+                                    <div class="project-desc">PRODUCT FOR MAJOR BANK TO FACILITATE LOAN INSURANCE</div>
                                     <div class="details-container">
                                         <div class="point">
                                             <div class="bullet-icon"></div>
-                                            <div class="point-content">Worked on making Data Store in <b>Django</b> for which the company earlier relied on JIRA.</div>
+                                            <div class="point-content">Created apis and data model to store at client side reducing DB updates and fetches for loan insurance workflow.</div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project body-right">
+                            <div>
+                                <div class="left-side-box"></div>
+                                <div class="project-content">
+                                    <div class="project-desc">Web Platform for Major Airline</div>
+                                    <div class="details-container">
                                         <div class="point">
                                             <div class="bullet-icon"></div>
-                                            <div class="point-content">Worked on features on UI on <b>Angular</b> and <b>React</b> (For cloud and server respectively).</div>
+                                            <div class="point-content">Made scalable UI for major platforms delivering features required by an airline to enable customers to fetch flight details, make and manage bookings.</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project">
-                        <div>
-                            <div class="left-side-box"></div>
-                            <div class="project-content">
-                                <div class="project-desc">Loan Insurance Platform for Life Insurer</div>
-                                <div class="project-time">09/2017 - 12/2017</div>
-                                <div class="details-container">
-                                    <div class="point">
-                                        <div class="bullet-icon"></div>
-                                        <div class="point-content">Made system exposing APIs in <b>Django</b> for various stages of webapp as a separate microservice.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div>
-                            <div class="left-side-box"></div>
-                            <div class="project-content">
-                                <div class="project-desc">Web Platform for Airline Company</div>
-                                <div class="project-time">07/2017 - 19/2017</div>
-                                <div class="details-container">
-                                    <div class="point">
-                                        <div class="bullet-icon"></div>
-                                        <div class="point-content">Made dynamic scalable UI in <b>React</b> delivering features required by an airline company</div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="body-right">
-                <div class="skills-container">
-                    <div class="skills-header">
-                        <div>SKILLS</div>
-                    </div>
-                    <div class="skills-inner">
-                        <div class="skill">
-                            <div>Python/Django</div>
+            <div style="clear: both;"></div>
+            <div>
+                <div style="margin-top:10px;">
+                    <div class="skills-container body-left">
+                        <div class="skills-header">
+                            <div>SKILLS</div>
                         </div>
-                        <div class="skill">
-                            <div>Java</div>
-                        </div>
-                        <div class="skill">
-                            <div>C++</div>
-                        </div>
-                        <div class="skill">
-                            <div>SQL</div>
-                        </div>
-                        <div class="skill">
-                            <div>React.js/Angular(2+)</div>
-                        </div>
-                        <div class="skill">
-                            <div>Rust</div>
-                        </div>
-                        <div class="skill">
-                            <div>Elm</div>
-                        </div>
-                        <div class="skill">
-                            <div>CSS/SCSS</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-title right-side">Education</div>
-                <div class="work-xp">
-                    <div class="company-name-container right-side">
-                        <div>Bachelor of Engineering<br/>Computer Science and Engineering</div>
-                    </div>
-                    <div class="projects-container">
-                        <div class="project right-side">
-                            <div>
-                                <div class="left-side-box"></div>
-                                <div class="project-content right-side">
-                                    <div class="project-desc college-name">Birla Institute of Technology, Mesra&nbsp;<a class="unstyled-link" href="https://www.bitmesra.ac.in/" target="_blank"><img src="../StaticAssets/black-contact-icons/external-link-symbol.png" class="contact-icon"/></a></div>
-                                    <div class="project-time">
-                                        <span>
-                                            <b><u>08/2013 - 06/2017</u></b>
-                                        </span>
-                                        <span>
-                                            First Class with Distinction
-                                        </span>
-                                    </div>
-                                </div>
+                        <div class="skills-inner">
+                            <div class="skill">
+                                <div>Java</div>
+                            </div>
+                            <div class="skill">
+                                <div>Python</div>
+                            </div>
+                            <div class="skill">
+                                <div>C++</div>
+                            </div>
+                            <div class="skill">
+                                <div>SQL</div>
+                            </div>
+                            <div class="skill">
+                                <div>React.js/Angular(2+)</div>
+                            </div>
+                            <div class="skill">
+                                <div>Rust</div>
+                            </div>
+                            <div class="skill">
+                                <div>AWS</div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="section-title right-side">PERSONAL PROJECTS</div>
-                <div class="work-xp">
-                    <div class="projects-container">
-                        <div class="project right-side">
-                            <div>
-                                <div class="project-content right-side">
-                                    <div class="project-desc">
-                                        Stock Price Predicion on Ensemble Learning Model
-                                    </div>
-                                    <div class="project-time">
-                                        <span>
-                                            08/2016 - 12/2016
-                                        </span>
-                                    </div>
-                                    <div class="details-container">
-                                        <div class="point">
-                                            <div class="bullet-icon"></div>
-                                            <div class="point-content">
-                                                Performed Linera Regression using <b>TensorFlow framework</b> on 
-                                                pre-processed data by clustering algorithm into time interval clusters.
+                    <div class="body-right">
+                        <div class="section-title right-side">Education</div>
+                        <div class="work-xp">
+                            <div class="company-name-container right-side">
+                                <div>Bachelor of Engineering<br/>Computer Science and Engineering</div>
+                            </div>
+                            <div class="projects-container">
+                                <div class="project right-side">
+                                    <div>
+                                        <div class="left-side-box"></div>
+                                        <div class="project-content right-side">
+                                            <div class="project-desc college-name">Birla Institute of Technology, Mesra&nbsp;<a class="unstyled-link" href="https://www.bitmesra.ac.in/" target="_blank"><img src="../StaticAssets/black-contact-icons/external-link-symbol.png" class="contact-icon"/></a></div>
+                                            <div class="project-time">
+                                                <span>
+                                                    <b><u>08/2013 - 06/2017</u></b>
+                                                </span>
+                                                <span>
+                                                    First Class with Distinction
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="projects-container">
-                        <div class="project right-side">
-                            <div>
-                                <div class="project-content right-side">
-                                    <div class="project-desc">Vehicle detection in video data stream</div>
-                                    <div class="project-time">
-                                        <span>
-                                            02/2017 - 5/2017
-                                        </span>
-                                    </div>
-                                    <div class="details-container">
-                                        <div class="point">
-                                            <div class="bullet-icon"></div>
-                                            <div class="point-content">
-                                                Used Haar-based classification using <b>openCV</b> library in <b>C++</b>.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-container">
-                    <div class="skills-header">
-                        <div>INTERESTS</div>
-                    </div>
-                    <div class="skills-inner">
-                        <div class="skill interest">
-                            <div>Sketching</div>
-                        </div>
-                        <div class="skill interest">
-                            <div>Quantum Physics</div>
-                        </div>
-                        <div class="skill interest">
-                            <div>Cooking</div>
-                        </div>
-                        <div class="skill interest">
-                            <div>Cycling</div>
-                        </div>
-                        <div class="skill interest">
-                            <div>Photography</div>
                         </div>
                     </div>
                 </div>
