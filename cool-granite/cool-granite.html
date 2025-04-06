@@ -323,14 +323,14 @@
         }
         .main-left {
             background-color: #2a2627;
-            width: 42%;
+            width: 38%;
             margin-top: -1px;
             padding: 20px;
         }
         .main-right {
-            width: 60%;
+            width: 64%;
             padding: 20px 30px 20px 20px;
-            height: 1009px;
+            height: 1000px;
             border-top: solid 1px #afadae;
             border-left: solid 1px #afadae;
         }
@@ -355,14 +355,25 @@
             font-size: 10px;
             color: #d1d1d1;
         }
+        
         .skills-inner {
+            clear: left;
+        }
+
+        .skill {
+            float: left;
+            width: auto;
+            margin: 0 10px 18px 0px;
+            font-size: 18px;
+            min-height: 18px;
+            line-height: 22px;
             color: #ffffff;
         }
-        .skills-inner ul {
-            padding-left: 20px;
-        }
-        .skills-inner li {
-            padding: 5px 0;
+        .skill> div {
+            border-radius: 6px;
+            padding: 6px 14px;
+            background-color: #d97d22;
+            word-break: break-all;
         }
         .skill-wrapper {
             -webkit-box-align: center;
@@ -383,6 +394,18 @@
         }
         .work-xp:last-of-type {
             border-bottom: none;
+        }
+        .new-skill-box {
+            border: 1px solid #d97d22;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+        }
+        .new-skill-box-outer {
+            padding: 2px;
+            border: 1px solid #d97d22;
+            border-radius: 8px;
         }
         
     </style>
@@ -408,8 +431,8 @@
             <div class="summary">
                 <div class="summary-inner">
                     <div class="summary-text">
-                        Software Engineer with 4+ years of experience in designing 
-                        and developing scalable software components for fast paced 
+                        Software Engineer with 5+ years of experience in designing 
+                        and developing secure scalable and reliable software components for fast paced 
                         business environment.
                     </div>
                 </div>
@@ -474,167 +497,39 @@
                         <div>SKILLS</div>
                     </div>
                     <div class="skills-inner">
-                        <ul>
-                            <li>
-                                <div class="row-container skill-wrapper">
-                                    <div>
-                                        Java (Spring)
-                                    </div>
-                                    <div class="skill-meter row-container">
-                                        <div class="skill-meter-fill" style="width: 70%;">
-                                        </div>
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row-container skill-wrapper">
-                                    <div>
-                                        HTTP/s <br/> (REST + RPC)
-                                    </div>
-                                    <div class="skill-meter row-container">
-                                        <div class="skill-meter-fill" style="width: 80%;">
-                                        </div>
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row-container skill-wrapper">
-                                    <div>
-                                        Distributed <br/> Systems
-                                    </div>
-                                    <div class="skill-meter row-container">
-                                        <div class="skill-meter-fill" style="width: 60%;">
-                                        </div>
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row-container skill-wrapper">
-                                    <div>
-                                        Jenkins + <br/> Kubernetes
-                                    </div>
-                                    <div class="skill-meter row-container">
-                                        <div class="skill-meter-fill" style="width: 60%;">
-                                        </div>
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row-container skill-wrapper">
-                                    <div>
-                                        DBMS - SQL
-                                    </div>
-                                    <div class="skill-meter row-container">
-                                        <div class="skill-meter-fill" style="width: 50%;">
-                                        </div>
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row-container skill-wrapper">
-                                    <div>
-                                        Golang
-                                    </div>
-                                    <div class="skill-meter row-container">
-                                        <div class="skill-meter-fill" style="width: 40%;">
-                                        </div>
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row-container skill-wrapper">
-                                    <div>
-                                        Cloud Utils <br/> (AWS)
-                                    </div>
-                                    <div class="skill-meter row-container">
-                                        <div class="skill-meter-fill" style="width: 55%;">
-                                        </div>
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row-container skill-wrapper">
-                                    <div>
-                                        GraphQL
-                                    </div>
-                                    <div class="skill-meter row-container">
-                                        <div class="skill-meter-fill" style="width: 25%;">
-                                        </div>
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row-container skill-wrapper">
-                                    <div>
-                                        React/Angular
-                                    </div>
-                                    <div class="skill-meter row-container">
-                                        <div class="skill-meter-fill" style="width: 40%;">
-                                        </div>
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row-container skill-wrapper">
-                                    <div>
-                                        HTML/CSS
-                                    </div>
-                                    <div class="skill-meter row-container">
-                                        <div class="skill-meter-fill" style="width: 80%;">
-                                        </div>
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row-container skill-wrapper">
-                                    <div>
-                                        Python
-                                    </div>
-                                    <div class="skill-meter row-container">
-                                        <div class="skill-meter-fill" style="width: 60%;">
-                                        </div>
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row-container skill-wrapper">
-                                    <div>
-                                        C++ <br/> (Competetive)
-                                    </div>
-                                    <div class="skill-meter row-container">
-                                        <div class="skill-meter-fill" style="width: 75%;">
-                                        </div>
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="skill">
+                            <div>Java (Spring)</div>
+                        </div>
+                        <div class="skill">
+                            <div>Golang</div>
+                        </div>
+                        <div class="skill">
+                            <div>Distributed System Design</div>
+                        </div>
+                        <div class="skill">
+                            <div>Database Design</div>
+                        </div>
+                        <div class="skill">
+                            <div>K8s</div>
+                        </div>
+                        <div class="skill">
+                            <div>AWS</div>
+                        </div>
+                        <div class="skill">
+                            <div>Computer Network</div>
+                        </div>
+                        <div class="skill">
+                            <div>CI/CD</div>
+                        </div>
+                        <div class="skill">
+                            <div>React/Angular</div>
+                        </div>
+                        <div class="skill">
+                            <div>C++</div>
+                        </div>
                     </div>
                 </div>
-                <div>
+                <div style="clear: left;">
                     <div class="section-title">EDUCATION</div>
                     <div>
                         <div class="education-degree-name">
@@ -668,19 +563,21 @@
                     </div>
                     <div class="company-content">
                         <div class="company-content-subsection">
-                            Developing and managing integrations across tech stacks
-                        </div>
-                        <div class="company-content-subsection">
-                            <span class="company-content-subheader">Learnings:&nbsp;</span>
-                            <span>
-                                Improved my ability to design developer friendly coherent system interfaces for services implemented in different stacks by 
-                                making logs, data models and erros standardized and extensible.
-                            </span>
+                            Developing and managing integrations with partner businesses
                         </div>
                         <div class="company-content-subsection">
                             <span class="company-content-subheader">Achievements:&nbsp;</span>
                             <span>
-                                Delivered secure, plug and play integrations to business partners and merchants in form of SDKs and APIs.
+                                Solved multiple facets of problem such as security, maintainence and customer journey by wearing multiple hats. 
+                                Designed systems to interact with Business Partner's systems with built in resilience and extensibility across 
+                                communication protocols.
+                            </span>
+                        </div>
+                        <div class="company-content-subsection">
+                            <span class="company-content-subheader">Learnings:&nbsp;</span>
+                            <span>
+                                Worked across domains such as Engineering, Devops and Product Desing to implemented solutions that were for first time in the Organization to
+                                deliver secure, fast and reliable integration to business partners and their customers.
                             </span>
                         </div>
                     </div>
@@ -698,17 +595,17 @@
                             Worked on cloud based backend of financial automation systems for Global Logistics Business.
                         </div>
                         <div class="company-content-subsection">
-                            <span class="company-content-subheader">Learnings:&nbsp;</span>
+                            <span class="company-content-subheader">Achievements:&nbsp;</span>
                             <span>
-                                Assimilated the challenges and solutions while developing high availability financial system spanning multiple geographical 
-                                regions.
+                                My expertise in system architecture and business use case of our team's systems got me nominated to lead the annual peak 
+                                preparation of the suite of services owned by my team.
                             </span>
                         </div>
                         <div class="company-content-subsection">
-                            <span class="company-content-subheader">Achievements:&nbsp;</span>
+                            <span class="company-content-subheader">Learnings:&nbsp;</span>
                             <span>
-                                My system architecture and business use case acumen both at low and high levels got me nominated to lead the annual peak 
-                                preparation of the suite of services owned by my team.
+                                Got acquainted with the challenges and solutions while developing high availability financial system spanning multiple geographical 
+                                regions.
                             </span>
                         </div>
                     </div>
@@ -726,16 +623,16 @@
                             Added value in UI and backend of Loan Management Systems
                         </div>
                         <div class="company-content-subsection">
-                            <span class="company-content-subheader">Learnings:&nbsp;</span>
+                            <span class="company-content-subheader">Achievements:&nbsp;</span>
                             <span>
-                                Mastered HTML and CSS. Used Angular and Material extensively. Hands on Java and Kafka to implement service for aforementioned 
-                                system.
+                                Delivered UI projects from scratch. Trained new engineers specifically in Redux, ReactiveX and Middlewares.
                             </span>
                         </div>
                         <div class="company-content-subsection">
-                            <span class="company-content-subheader">Achievements:&nbsp;</span>
+                            <span class="company-content-subheader">Learnings:&nbsp;</span>
                             <span>
-                                Led a small team and delivered UI projects from scratch. Trained new engineers specifically in Redux, ReactiveX and Middlewares.
+                                Mastered HTML and CSS. Used Angular and Material extensively. Got opportunity to learn Java and Kafka and integrated 
+                                aforementioned UI to existing backend.
                             </span>
                         </div>
                     </div>
@@ -753,17 +650,17 @@
                             Worked intensively on UI Technologies.
                         </div>
                         <div class="company-content-subsection">
-                            <span class="company-content-subheader">Learnings:&nbsp;</span>
-                            <span>
-                                Got acquainted with the vast field of UI technologies viz. HTML and CSS, Angular, React, Backbone, svg, CDN, 
-                                single page multi component apps etc.
-                            </span>
-                        </div>
-                        <div class="company-content-subsection">
                             <span class="company-content-subheader">Achievements:&nbsp;</span>
                             <span>
                                 Delivered high performant UI components with reduced load times. Improved data model design to reduce network and storage load
                                 to 25%.
+                            </span>
+                        </div>
+                        <div class="company-content-subsection">
+                            <span class="company-content-subheader">Learnings:&nbsp;</span>
+                            <span>
+                                Got acquainted with the vast field of UI technologies viz. HTML and CSS, Angular, React, Backbone, svg, CDN, 
+                                single page multi component apps etc.
                             </span>
                         </div>
                     </div>
