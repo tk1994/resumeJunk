@@ -322,7 +322,7 @@
         }
         .company-name-container {
             padding-left: 40px;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             margin-top: 8px;
             font-weight: 600;
             font-size: 22px;
@@ -514,7 +514,7 @@
                             <div class="summary">
                                 <div class="summary-inner">
                                     <div class="summary-text">
-                                        Software Engineer with 5+ years of experience in designing and developing secure scalable 
+                                        Software Engineer with 6+ years of experience in designing and developing secure scalable 
                                         and reliable software components for fast paced business environment.
                                     </div>
                                 </div>
@@ -539,7 +539,7 @@
                             </div>
                             <div>
                                 <a class="contact-container" href="https://www.linkedin.com/in/tushar-kumar-108709123" target="_blank">
-                                    <div class="icon-container">
+                                    <div class="icon-container" style="top: 12px;">
                                         <img src="../StaticAssets/black-contact-icons/linkedin-logo.png" class="contact-icon"/>
                                     </div>
                                     linkedin.com/in/tushar-kumar-108709123
@@ -566,7 +566,7 @@
                 </div>
             </div>
             <div style="clear: both;"></div>
-            <div style="border-bottom: 2px solid #4f90cd; padding-bottom: 10px; height: 895px; position: relative;">
+            <div style="border-bottom: 2px solid #4f90cd; padding-bottom: 10px; height: 910px; position: relative;">
                 <div class="icon-container" style="position: absolute; top: 0; right: 50px;">
                     <img src="../StaticAssets/text-direction-horizontal-ltr-svgrepo-com.png" class="contact-icon" style="height: 50px; width: 50px;"/>
                 </div>
@@ -578,9 +578,94 @@
                 <div class="" style="border-bottom: 1px dashed #4f90cd; height: 235px;">
                     <div class="work-xp">
                         <div class="company-name-container center-align" style="width: 64%;">
+                            <div class="center-align" style="width: 58%;">Appsmith Software Pvt. Ltd.</div>
+                            <div class="project-time center-align" style="width: 80%;">
+                                <u>Apr 2023 - Present</u>
+                                <span class="company-desc" style="margin-left: 10px;">Open Source Internal Tooling Platform.</span>
+                            </div>
+                        </div>
+                        <div class="projects-container">
+                            <div class="project body-left">
+                                <div>
+                                    <div class="left-side-box"></div>
+                                    <div class="project-content">
+                                        <div class="project-desc">Compatibility with Document DB for Business Edition users</div>
+                                        <div class="details-container">
+                                            <div class="point">
+                                                <div class="bullet-icon"></div>
+                                                <div class="point-content">
+                                                    Revamped the repository layer by testing, benchmarking and finding alternative queries to make mongo db based
+                                                    Appsmith compatible with AWS Document DB.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project body-right">
+                                <div>
+                                    <div class="left-side-box"></div>
+                                    <div class="project-content">
+                                        <div class="project-desc">Revamp of request handling layer</div>
+                                        <div class="details-container">
+                                            <div class="point">
+                                                <div class="bullet-icon"></div>
+                                                <div class="point-content">
+                                                    Revamped the cloud instance to move to Golang from reactive streams in java 
+                                                    since multithreading was better with reactive streams but high turnaround time.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-container">
+                            <div class="project body-left">
+                                <div>
+                                    <div class="left-side-box"></div>
+                                    <div class="project-content">
+                                        <div class="project-desc">Product Alerting Mechanism</div>
+                                        <div class="details-container">
+                                            <div class="point">
+                                                <div class="bullet-icon"></div>
+                                                <div class="point-content">
+                                                    Mechanish to provide alerts to users for breaking changes planned in future releases. Used Spring expression
+                                                    language and facade pattern to enable easier evaluation of message applicability for different users.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project body-right">
+                                <div>
+                                    <div class="left-side-box"></div>
+                                    <div class="project-content">
+                                        <div class="project-desc">Datasource Plugins Refactor and new Plugins POC</div>
+                                        <div class="details-container">
+                                            <div class="point">
+                                                <div class="bullet-icon"></div>
+                                                <div class="point-content">
+                                                    Refactored plugins module to use sound design patterns so that open source community can add plugins easily.
+                                                    POC of new plugin using google photos as datasource with OAuth to control access.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="" style="border-bottom: 1px dashed #4f90cd; height: 245px;">
+                    <div class="work-xp">
+                        <div class="company-name-container center-align" style="width: 64%;">
                             <div class="center-align" style="width: 68%;">Cashfree Payments India Pvt Ltd</div>
                             <div class="project-time center-align" style="width: 72%;">
-                                <u>Jul 2021 - Present</u>
+                                <u>Jul 2021 - Mar 2023</u>
                                 <span class="company-desc" style="margin-left: 10px;">Payments solution provider.</span>
                             </div>
                         </div>
@@ -594,9 +679,8 @@
                                             <div class="point">
                                                 <div class="bullet-icon"></div>
                                                 <div class="point-content">
-                                                    Revamped merchant onboarding flow by making operations between workflow steps idempotent 
-                                                    to ensure resilience and reduce
-                                                    manual operational load. Optimized DB calls to make the process fast.
+                                                    Revamped and Created new merchant partner onboarding platform in Golang improving reliability compared to exisitng 
+                                                    node based implementation.
                                                 </div>
                                             </div>
                                         </div>
@@ -621,6 +705,8 @@
                                                 <div class="bullet-icon"></div>
                                                 <div class="point-content">
                                                     Implemented required security, latency and reliability requirement some of which were first time in the organisation.
+                                                    Created edge layer service for faster requests handling, caching, rate limiting and idempotency checking in Golang 
+                                                    and implemented repository service in Java.
                                                 </div>
                                             </div>
                                         </div>
@@ -633,13 +719,12 @@
                                 <div>
                                     <div class="left-side-box"></div>
                                     <div class="project-content">
-                                        <div class="project-desc">SDK for merchants</div>
+                                        <div class="project-desc">Payment links and forms</div>
                                         <div class="details-container">
                                             <div class="point">
                                                 <div class="bullet-icon"></div>
                                                 <div class="point-content">
-                                                    Generated SDKs and distributed via public package repo for merchants to access cashfree
-                                                    payment gateway utilities programatically on their platform.
+                                                    Enhanced and managed the Payment links and forms platform. Reduced failure rates and latency in bulk operations.
                                                 </div>
                                             </div>
                                         </div>
@@ -649,7 +734,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="" style="border-bottom: 1px dashed #4f90cd; height: 260px;">
+                <div class="" style="border-bottom: 1px dashed #4f90cd; height: 185px;">
                     <div class="work-xp">
                         <div class="company-name-container center-align" style="width: 64%;">
                             <div class="center-align">Amazon Development Centre (India) Private Limited</div>
@@ -719,25 +804,7 @@
                                         <div class="details-container">
                                             <div class="point">
                                                 <div class="bullet-icon"></div>
-                                                <div class="point-content">Automated the stack setup process of a suite of financial systems based on legacy AWS infra using AWS cloudformation and pipelines automation tool with workaround for missing technologies in restrictive AWS regions.</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="projects-container">
-                            <div class="project body-left">
-                                <div>
-                                    <div class="left-side-box"></div>
-                                    <div class="project-content">
-                                        <div class="project-desc">CI/CD Pipelines</div>
-                                        <div class="details-container">
-                                            <div class="point">
-                                                <div class="bullet-icon"></div>
-                                                <div class="point-content">
-                                                    Reduced security and availability risks of team's CI/CD pipelines by integrating best practice tools.
-                                                </div>
+                                                <div class="point-content">Automated the stack setup process of a suite of financial systems in restrictive AWS regions.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -746,8 +813,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="" style="clear: both;">
-                    <div class="work-xp" style="border-bottom: 1px dashed #4f90cd; height: 140px;">
+
+
+                <div style="border-bottom: 1px dashed #4f90cd; height: 80px;">
+                    <div class="work-xp">
                         <div class="company-name-container" style="margin-left: auto; margin-right: auto; width: 62%;">
                             <div class="center-align" style="width: 68%;">LendingKart Technologies Pvt. Ltd.</div>
                             <div class="project-time">
@@ -758,44 +827,21 @@
                             </div>
                         </div>
                         <div class="projects-container">
-                            <div class="project body-left">
+                            <div class="project body-left" style="width: 100%;">
                                 <div>
                                     <div class="left-side-box"></div>
                                     <div class="project-content">
-                                        <div class="project-desc">Colender Interaction</div>
-                                        <div class="details-container">
-                                            <div class="point">
-                                                <div class="bullet-icon"></div>
-                                                <div class="point-content">
-                                                    Implemented generic interface using webhooks for colender bank systems to send data 
-                                                    to and processed asynchronously using a Kafka workflow.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project body-right">
-                                <div>
-                                    <div class="left-side-box"></div>
-                                    <div class="project-content">
-                                        <div class="project-desc">Loan Management System</div>
-                                        <div class="details-container">
-                                            <div class="point">
-                                                <div class="bullet-icon"></div>
-                                                <div class="point-content">
-                                                    Workflow to collect loan data from various microservices using a facade interface for each facet of data and compile a markup document.
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <div class="project-desc">Worked on developing UI for loan management and loan documents processing systems.</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div style="height: 100px;">
                     <div class="work-xp">
                         <div class="company-name-container center-align" style="width: 68%;">
-                            <div class="center-align" style="width: 52%;">Kuliza Technologies Pvt. Ltd.</div>
+                            <div class="center-align" style="width: 52%; position: absolute; left: 350px;">Kuliza Technologies Pvt. Ltd.</div>
                             <div class="project-time center-align">
                                 <u>Jul 2017 - Feb 2019</u>
                                 <span class="company-desc" style="margin-left: 10px;">
@@ -804,68 +850,15 @@
                             </div>
                         </div>
                         <div class="projects-container">
-                            <div class="project body-left">
-                                <div>
+                            <div class="project body-left" style="width: 100%;">
+                                <div style="min-height: auto;">
                                     <div class="left-side-box"></div>
                                     <div class="project-content">
-                                        <div class="project-desc">Platform for General Insurer</div>
-                                        <div class="details-container">
-                                            <div class="point">
-                                                <div class="bullet-icon"></div>
-                                                <div class="point-content">
-                                                    UI for field agents to perform vehicle inspection optimised to reduce neworking and DB calls.
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <div class="project-desc">Created software products for clients working in Insurance and Finance sectors to 
+                                            help their business expand over the internet.</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="project body-right">
-                                <div>
-                                    <div class="left-side-box"></div>
-                                    <div class="project-content">
-                                        <div class="project-desc">SAAS Extension for JIRA Software</div>
-                                        <div class="details-container">
-                                            <div class="point">
-                                                <div class="bullet-icon"></div>
-                                                <div class="point-content">Extension for Atlassian JIRA which provide quality test management to any JIRA project.</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="projects-container" style="clear: both;">
-                        <div class="project body-left">
-                            <div>
-                                <div class="left-side-box"></div>
-                                <div class="project-content">
-                                    <div class="project-desc">Product for Financial Org to facilitate loan insurance</div>
-                                    <div class="details-container">
-                                        <div class="point">
-                                            <div class="bullet-icon"></div>
-                                            <div class="point-content">Created apis and data model to store at client side reducing DB updates and fetches for loan insurance workflow.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project body-right">
-                            <div>
-                                <div class="left-side-box"></div>
-                                <div class="project-content">
-                                    <div class="project-desc">Web Platform for Major Airline</div>
-                                    <div class="details-container">
-                                        <div class="point">
-                                            <div class="bullet-icon"></div>
-                                            <div class="point-content">
-                                                Made scalable UI to enable customers to fetch flight details, make and manage bookings.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -879,16 +872,10 @@
                         </div>
                         <div class="skills-inner">
                             <div class="skill">
-                                <div>Java</div>
-                            </div>
-                            <div class="skill">
                                 <div>GoLang</div>
                             </div>
                             <div class="skill">
-                                <div>Distributed System Design</div>
-                            </div>
-                            <div class="skill">
-                                <div>Database Design</div>
+                                <div>Java</div>
                             </div>
                             <div class="skill">
                                 <div>K8s</div>
@@ -897,16 +884,16 @@
                                 <div>AWS</div>
                             </div>
                             <div class="skill">
-                                <div>C++</div>
-                            </div>
-                            <div class="skill">
-                                <div>Computer Network</div>
-                            </div>
-                            <div class="skill">
                                 <div>CI/CD</div>
                             </div>
                             <div class="skill">
-                                <div>Python</div>
+                                <div>Reactive Streams</div>
+                            </div>
+                            <div class="skill">
+                                <div>Database Design</div>
+                            </div>
+                            <div class="skill">
+                                <div>Event Driven Systems</div>
                             </div>
                             <div class="skill">
                                 <div>React/Angular</div>
